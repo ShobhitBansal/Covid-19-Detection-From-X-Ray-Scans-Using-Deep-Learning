@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-seriff;
+  color: white;
+  background-color: black;
+}
+
+.navbar {
+  background: rgba(0,0,0, 0.6);
+}
+.navbar-brand {
+  height: 3rem;
+}
+.back {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.caption {
+  position: relative;
+  top: -60%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+  color: white;
+}
+.caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  /* horizontal vertical weight color-code*/
+  text-shadow: 1px 1px 7px #000;
+}
+.caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px #000;
+  padding-bottom: 1rem;
+}
+.form-inline {
+  transform: translateX(35%);
+}
+.btn-large {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.3rem;
+}
+.scan {
+  transform: translateY(5%);
+}
+.scan img {
+  height: 90%;
+  width: 50%;
+}
+.btn-primary {
+  /* Hex-value of color-code for RGB type color*/
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;  
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  transform: translateY(-30%);
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.p {
+  width: 18%;
+  height: 50%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.k {
+  width: 15%;
+  height: 50%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.f {
+  width: 35%;
+  height: 50%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif1 {
+  max-width: 100%;
+  height: 90%;
+  width: 37%;
+  padding: 10px;
+}
+.gif2 {
+  max-width: 100%;
+  height: 90%;
+  width: 45%;
+  padding: 10px;
+} 
+.row {
+  width: 100%;  
+}
+.social a {
+  font-size: 6em;
+  padding : 190px;
+  padding-bottom: 10px;
+}
+.fa-github {
+  color: white;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-github:hover, .fa-linkedin:hover, .fa-youtube:hover {
+  color: #d5d5d5;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) { 
+.social a {
+    font-size: 3em;
+    padding: 1em;  
+}
+}
+}
+@media (max-width: 768px) {
+.caption h1 {
+  font-size: 140%;
+}
+.caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+.btn-large {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.carousel-caption form {
+  size: 95%;
+}
+.display-4 {
+  font-size: 200%;
+
+}
+.social a {
+    font-size: 2.5em;
+    padding: 1.2rem;  
+}
+}
+@media (max-width: 576px) {
+.caption {
+  top: -50%;
+}
+.caption h1 {
+  font-size: 220%;
+}
+.caption h3 {
+  font-size: 110%;
+}
+.btn-large {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.form-inline {
+  transform: translateX(25%);
+}
+.form-control {
+  height: 30px;
+  width: 150px;
+  font-size: 8px;  
+}
+.btn {
+  height: 30px;
+  width: 60px;
+  font-size: 8px;
+}
+.display-4 {
+  font-size: 160%;
+
+}
+.social a {
+    font-size: 2.5em;
+    padding: 2rem;  
+}
+}
+
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url(img/piano.png);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
